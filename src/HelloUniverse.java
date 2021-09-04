@@ -37,9 +37,21 @@ public class HelloUniverse {
             mars.accueillirVaisseau(8);
             mars.accueillirVaisseau("FREGATE");
 
-            System.out.println("Le nombre d'humains ayant déja séjourné sur Mars est actuellement de "+mars.totalVisiteurs+".");
+            Atmosphere atmosphere = new Atmosphere();
+            uranus.atmosphere=atmosphere;
+            uranus.atmosphere.tauxHydrogene=83;
+            uranus.atmosphere.tauxHelium=15;
+            uranus.atmosphere.tauxMethane=2.5f;
 
-            //  System.out.println( planèteX.nom +" est une planète " + planèteX.matiere+" avec un diamètrede " +planèteX.diametre+" kilomètres");
-
+ System.out.println("L'atmosphère de Uranus est composée:  \n"+
+                 "A "+uranus.atmosphere.tauxHydrogene+"% d'hydrogène \n"+
+                 "A "+uranus.atmosphere.tauxArgon+" % d'argon \n"+
+                 "A "+uranus.atmosphere.tauxDioxydeCarbone+"% de dioxyde de carbone \n"+
+                 "A "+uranus.atmosphere.tauxAzote+"% d'azote \n"+
+                 "A "+uranus.atmosphere.tauxHelium+"% d'hélium \n"+
+                 "A "+uranus.atmosphere.tauxMethane+"% de méthane \n"+
+                 "A "+uranus.atmosphere.tauxSodium+"% de sodium "
+         //  System.out.println( planèteX.nom +" est une planète " + planèteX.matiere+" avec un diamètrede " +planèteX.diametre+" kilomètres");
+ );
     }
 }

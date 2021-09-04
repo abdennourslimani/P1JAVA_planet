@@ -3,6 +3,7 @@ public class Planete {
     int diametre;
     String matiere;
     int totalVisiteurs;
+    Atmosphere atmosphere;
 
     int revolution(int angle) {
         return angle / 360;
